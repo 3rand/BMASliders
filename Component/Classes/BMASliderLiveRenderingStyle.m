@@ -55,7 +55,7 @@
 
 - (UIImage *)handlerImage {
     UIGraphicsBeginImageContextWithOptions(CGSizeMake(28., 28.), NO, [[UIScreen mainScreen] scale]);
-    UIColor *color = [UIColor redColor];
+    UIColor *color = [UIColor whiteColor];
 
     UIBezierPath *ovalPath = [UIBezierPath bezierPathWithOvalInRect:CGRectMake(0., 0., 28., 28.)];
     [color setFill];
@@ -65,5 +65,31 @@
     UIGraphicsEndImageContext();
     return thumbnail;
 }
+
+- (UIImage *)handlerImageLower {
+    UIGraphicsBeginImageContextWithOptions(CGSizeMake(28., 28.), NO, [[UIScreen mainScreen] scale]);
+    UIColor *color = [UIColor whiteColor];
+
+    UIBezierPath *ovalPath = [UIBezierPath bezierPathWithOvalInRect:CGRectMake(0., 0., 28., 28.)];
+    [color setFill];
+    [ovalPath fill];
+
+    UIImage *thumbnail = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return thumbnail;
+}
+- (UIImage *)handlerImageUpper {
+    UIGraphicsBeginImageContextWithOptions(CGSizeMake(28., 28.), NO, [[UIScreen mainScreen] scale]);
+    UIColor *color = [UIColor whiteColor];
+
+    UIBezierPath *ovalPath = [UIBezierPath bezierPathWithOvalInRect:CGRectMake(0., 0., 28., 28.)];
+    [color setFill];
+    [ovalPath fill];
+
+    UIImage *thumbnail = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return thumbnail;
+}
+
 
 @end
