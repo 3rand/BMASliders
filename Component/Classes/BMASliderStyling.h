@@ -30,5 +30,7 @@
 - (UIImage *)unselectedLineImage;
 - (UIImage *)selectedLineImage;
 - (UIImage *)handlerImage;
+- (UIImage *)handlerImageLower;
+- (UIImage *)handlerImageUpper;
 
 @end
